@@ -44,7 +44,8 @@ $(function(){
     });
 });
 
-
+// Initialize Firebase
+var database = firebase.database();
 
 //firebase
 $(document).ready(function(){
