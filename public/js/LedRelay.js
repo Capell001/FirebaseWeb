@@ -46,18 +46,26 @@ $(function(){
 
 // Initialize Firebase
 var database = firebase.database();
+var btnState;
 
 //firebase
 $(document).ready(function(){
-    $("a.btn").on("click",function(event){
-        event.preventDefault();
-        $(this).toggleClass("btn-open");
-        if($(this).hasClass("btn-open")){
-            $(".status").text("OPEN");
+    database.ref("iot0624/LED").on('value',function(snapshot){
+        //console.log(snapshot.val())
+        btnState = snapshot.val();
+        if(btnState){
+            $("a.btn").addClass("btn-open");
+            $(".status").html("OPEN");
+        }
+        else{
+            $("a.btn").removeClass("btn-open");
+            $(".status").html("CLOSE");
         }
 
-        else{
-            $(".status").text("CLOSE");
-        }
+    });
+
+    $("a.btn").on("click",function(event){
+        event.preventDefault();
+        database.ref("iot0624/LED").set(!btnState);
     })
 });
