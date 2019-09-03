@@ -122,12 +122,43 @@ main{
 }
 
 /*====================Card Start====================================*/
-.card-body{
+#ledControl .card-body{
     background-color: #e6e6e6;
     border: 1px #ccc solid;
     padding:1em 2em;
-    margin:5em;
+    margin: 5em auto;
+    width: 50%;
 }
+#ledControl .card-title{
+    font-weight: 700;
+    font-size: 1.5em;
+    color: rgb(204, 61, 61);
+    margin-bottom: 0.3em;
+}
+
+#lenControl .card-text{
+    line-height: 1.2em;
+    letter-spacing: 0.02em;
+}
+
+#ledControl .btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    color: rgb(255, 254, 254);
+    text-decoration: none;
+    font-weight: 400;
+    margin-top: 3em;
+    border: 1px solid #555;
+    background-color: rgb(52, 57, 134);
+}
+
+
+#ledControl .btn-open {
+    background-color: #fa3232;
+}
+
+
 /*====================Card End====================================*/
 
 
@@ -176,26 +207,7 @@ footer{
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    #innerMain {
-        width: 95%;
-        margin: 20px auto;
-
-    }
-    #sectionContainer {
-       flex-wrap: wrap;
-    }
-
-    #sectionContainer section:first-child {
-        width:100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    #sectionContainer section:nth-child(2){
-        width:40%;
-    }
-    #sectionContainer section:last-child{
-        width:40%;
-    }
+   
 
     footer {
         background: #93435e;
@@ -242,30 +254,13 @@ footer{
     }
     
 
-    #innerMain {
-        width: 100%;
-        padding: 20px;
+     /*===================Main Start=====================================*/
+     #ledControl .card-body {
+        width: 80%;
     }
 
-    #sectionContainer {
-       flex-wrap: wrap;
-    }
-    #sectionContainer section:first-child {
-        width:100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    #sectionContainer section:nth-child(2){
-        width:100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    #sectionContainer section:last-child{
-        width:100%;
-		margin-right: 0;
-		margin-left: 0;
-        margin-bottom: 20px;
-    }
+    /*===================Main End=====================================*/
+
 
     footer {
         background: #938245;

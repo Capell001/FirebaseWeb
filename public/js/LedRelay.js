@@ -44,17 +44,19 @@ $(function(){
     });
 });
 
-$(function(){
-     // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBpPT3Zfu28n1bEdi_bjYj_qA5fUqY2cEU",
-    authDomain: "iotcapel.firebaseapp.com",
-    databaseURL: "https://iotcapel.firebaseio.com",
-    projectId: "iotcapel",
-    storageBucket: "",
-    messagingSenderId: "876886850098",
-    appId: "1:876886850098:web:313a2009d73c5c8e"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+
+
+//firebase
+$(document).ready(function(){
+    $("a.btn").on("click",function(event){
+        event.preventDefault();
+        $(this).toggleClass("btn-open");
+        if($(this).hasClass("btn-open")){
+            $(".status").text("OPEN");
+        }
+
+        else{
+            $(".status").text("CLOSE");
+        }
+    })
 });
