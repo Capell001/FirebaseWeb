@@ -1,7 +1,20 @@
-function newDomListener(event){
-    $(this).remove();
-}
+//menu
+$(function () {
+    $.ajax({
+        dataType: "json",
+        url: "menu.json",
+        success: function(data){
+            var menuHtml = "";
+            jQuery.each(data,function(key,value){
+                menuHtml += "<li><a href=\""+ value + "\">" + key + "</a></li>\n";
+            });
 
+            $("nav ul").append(menuHtml);
+        }
+    });
+});
+
+//sign in
 $(function(){
     var $alertMessage = $(".alertMessage");
     $alertMessage.hide();
@@ -15,6 +28,7 @@ $(function(){
     });
 });
 
+//menu
 $(function(){
     var menuState = false;
     var $list = $(".list");
@@ -44,6 +58,7 @@ $(function(){
     });
 });
 
+//firebase
 $(function(){
      // Your web app's Firebase configuration
   var firebaseConfig = {
