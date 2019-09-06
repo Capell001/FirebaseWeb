@@ -116,11 +116,63 @@ nav a.SignIn:hover{
 
 
 /*==============================Main Start==============================*/
+
+ /*====================產品圖片 start====================*/
+    section.itemImage{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section.itemImage .photo{
+        display:block;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    section.itemImage h3{
+        font-size:2em;
+    }
+
+    section.itemImage p{
+        margin-top: 3em;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+
+    /*====================產品圖片 end====================*/
 main{
 	/*background-color: bisque;*/
 	margin-bottom: 50px;
 }
+ /*====================產品圖片 start====================*/
+ section.itemImage{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+section.itemImage .photo{
+    display:block;
+
+    width: 100%;
+    height: 100%;
+}
+
+section.itemImage h3{
+    font-size:2em;
+}
+
+section.itemImage p{
+    margin-top: 3em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+
+/*====================產品圖片 end====================*/
 /*====================Card Start====================================*/
 #ledControl .card-body{
     background-color: #e6e6e6;
@@ -161,7 +213,18 @@ main{
 
 /*====================Card End====================================*/
 
-
+ /*=========================youtube start================================*/
+ section.demoMovie{
+    width:50%;
+    margin:0 auto;
+}
+section.demoMovie iframe{
+    width:100%;
+    height: 380px;
+    display:block;
+    margin:0 auto;
+}
+/*=========================youtube start================================*/
 
 /*==============================Main End==============================*/
 footer{
@@ -260,7 +323,13 @@ footer{
     }
 
     /*===================Main End=====================================*/
-
+    /*====================產品圖片 start====================*/
+    section.itemImage{
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*====================產品圖片 start====================*/
 
     footer {
         background: #938245;

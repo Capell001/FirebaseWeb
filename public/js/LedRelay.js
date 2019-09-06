@@ -1,51 +1,40 @@
 //menu
-$(function () {
+$(function(){
     $.ajax({
         dataType: "json",
-        url: "menu.json",
+        url: "../menu.json",
         success: function(data){
             var menuHtml = "";
             jQuery.each(data,function(key,value){
                 menuHtml += "<li><a href=\""+ value + "\">" + key + "</a></li>\n";
             });
-
             $("nav ul").append(menuHtml);
         }
     });
 });
-//Sign in
-$(function(){
-    var $alertMessage = $(".alertMessage");
-    $alertMessage.hide();
 
-    $('.SignIn').on('click',function(event){
-        $alertMessage.slideDown(300);
-        event.preventDefault();
-        $('.cancel').on("click",function(event){
-            $alertMessage.slideUp(300);
-        });  
-    });
-});
 
+//menu
 $(function(){
     var menuState = false;
     var $list = $(".list");
-    $list.hide();
+    if(window.innerWidth<767){
+        $(".list").hide();
+    }
     $("#menu").on('click',function(event){
         menuState = !menuState;
         if(menuState){
             console.log("menu open");
-            $(this).attr("src","images/cross.png");
+            $(this).attr("src","../images/cross.png");
             $list.slideDown(300);
         }
         else{
             console.log("menu close");
-            $(this).attr("src","images/menu.png");
+            $(this).attr("src","../images/menu.png");
             $list.slideUp(300);
         }
-    });
 
-    $(window).resize(function(event){
+        $(window).resize(function(event){
         //console.log(window.innerWidth);
         if(window.innerWidth>767){
             $(".list").show();
@@ -54,6 +43,9 @@ $(function(){
             $(".list").hide();
         }
     });
+    });
+
+    
 });
 
 // Initialize Firebase

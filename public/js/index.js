@@ -1,5 +1,5 @@
 //menu
-$(function () {
+$(function() {
     $.ajax({
         dataType: "json",
         url: "menu.json",
@@ -32,7 +32,9 @@ $(function(){
 $(function(){
     var menuState = false;
     var $list = $(".list");
-    $list.hide();
+    if(window.innerWidth<767){
+        $(".list").hide();
+    }
     $("#menu").on('click',function(event){
         menuState = !menuState;
         if(menuState){
@@ -45,9 +47,8 @@ $(function(){
             $(this).attr("src","images/menu.png");
             $list.slideUp(300);
         }
-    });
 
-    $(window).resize(function(event){
+        $(window).resize(function(event){
         //console.log(window.innerWidth);
         if(window.innerWidth>767){
             $(".list").show();
@@ -56,6 +57,9 @@ $(function(){
             $(".list").hide();
         }
     });
+    });
+
+    
 });
 
 //firebase

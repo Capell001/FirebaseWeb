@@ -144,7 +144,6 @@ h1+p {
 
 #sectionContainer section {
     flex-grow: 1;
-    height: 300px;
 	border: solid 1px #bbb;
 }
 
@@ -167,16 +166,22 @@ section h2 {
 }
 
 section li {
-    margin: 10px;
-    text-align: center;
-
-}
-
-section li:first-child {
     margin: 20px;
     text-align: center;
-	font-size: 2em;
+    letter-spacing: 0.03em;
+	font-size: 1.2em;
+    font-weight: 400;
+    border: 1px solid #999;
+    padding: 20px;
+
 }
+
+section li a{
+    text-decoration: none;
+    color:#999999;
+}
+
+
 
 section p{
 	text-align: center;
@@ -187,9 +192,7 @@ section p{
 	border-radius: 7px;
 }
 
-section p.SE2{
-	background-color: #326ab3;
-}
+
 section p:hover{
 	background:#F17c67;
 	color:#FFF;
@@ -244,20 +247,18 @@ footer{
         margin: 20px auto;
 
     }
-    #sectionContainer {
-       flex-wrap: wrap;
-    }
+   
 
     #sectionContainer section:first-child {
-        width:100%;
-        margin-right: 0;
-        margin-bottom: 20px;
+        width:50%;
+        margin:0 0 20px 0;
     }
-    #sectionContainer section:nth-child(2){
-        width:40%;
-    }
+
+
     #sectionContainer section:last-child{
-        width:40%;
+        width:50%;
+        margin-right: 10px;
+        margin-bottom: 20px;
     }
 
     footer {
@@ -318,11 +319,7 @@ footer{
         margin-right: 0;
         margin-bottom: 20px;
     }
-    #sectionContainer section:nth-child(2){
-        width:100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
+   
     #sectionContainer section:last-child{
         width:100%;
 		margin-right: 0;
