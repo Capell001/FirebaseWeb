@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/LedRelay.css">
+  <link rel="stylesheet" href="../css/sevenSeg.css">
   <script src="../js/jquery-3.4.1.min.js"></script>
  <!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="/__/firebase/6.5.0/firebase-app.js"></script>
@@ -17,7 +18,7 @@
 <!-- Initialize Firebase -->
 <script src="/__/firebase/init.js"></script>
   <script src="../js/LedRelay.js"></script>
-  <title>Capel</title>
+  <title>七段顯示器</title>
   
 </head>
 <body>
@@ -33,28 +34,39 @@
   <main>
       <section class="itemImage">
 
-          <img src="../images/device17_1000.jpg"  alt="two channel relay" class="photo">
+          <img src="../images/sevenSeg.jpg"  alt="two channel relay" class="photo">
           <div class="card-body">
-              <h3 class="item-title">2 channel 繼電器</h3>
-              <p class="item-text">Relay 繼電器的目的是以小電流控制大電流的ON/OFF，這樣就可以利用微電腦CPU的IO(Input/Output)來控制家電甚至動力馬達。常見到的應用如汽車的方向燈；建築物蓄水池的抽水馬達，也是利用浮球的低電壓訊號來驅動繼電器ON/OFF，進而驅動抽水馬達。</p>
+              <h3 class="item-title">七段顯示器</h3>
+              <p class="item-text">七段顯示器是一種具有 8 顆 LED 的顯示元件，其中 7 顆 LED 用來顯示阿拉伯數字中不同部位的筆畫 ，而另外一顆 LED 則用來當作小數點顯示使用</p>
 
 
           </div>
       </section>
-    <div class="card" id="ledControl">
-        <div class="card-body">
-            <h5 class="card-title">LED 控制器</h5>
-            <p class="card-text">控制Firebase 及時資料庫的LED欄位，可遠端控制家庭燈具</p>
-            <a href="#" class="btn btn-primary">LED status:<span class="status">CLOSE</span></a>
+      <div class="card sevenSeg" id="ledControl" >
+            <div class="card-body">
+                <h5 class="card-title">七段顯示控制中心</h5>
+                <p class="card-text">使用網頁介面操控遠端的七段顯示器</p>
+                <div class="digits">
+                    <button type="button">0</button>
+                    <button type="button">1</button>
+                    <button type="button">2</button>
+                    <button type="button">3</button>
+                    <button type="button">4</button>
+                    <button type="button">5</button>
+                    <button type="button">6</button>
+                    <button type="button">7</button>
+                    <button type="button">8</button>
+                    <button type="button">9</button>
+                </div>
+            </div>
         </div>
-    </div>
 
     <section class="demoMovie">
         <iframe  src="https://www.youtube.com/embed/aW7J9z0nYSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     <section class="code">
-        <iframe height="600px" width="100%" src="https://repl.it/@roberthsu2003/c0905for2?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+        
     </section>
   </main>
   <footer>
