@@ -9,13 +9,13 @@
 .sevenSeg .digits button{
     text-align: center;
     font-size: 2em;
-    padding: 1em;
+    padding: 0.5em;
     color:#FFFFFF;
     background-color: #666666;
     border: solid 1px #FFFFFF;
 }
 
-.sevenSeg .digits button:nth-child(3){
+.sevenSeg .digits .selected{
 
      background-color: #a9201b;
 
