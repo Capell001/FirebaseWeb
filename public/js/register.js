@@ -76,25 +76,17 @@ firebase.auth().signInWithEmailAndPassword("bbb@gmail.com", "111111")
   // ...
 });
 
+//progress interface
 //提取realtime database
 let database = firebase.database();
-var btnState;
-//firebase
-$(document).ready(function(){
-    database.ref("iot0624/lcdControl").on('value',function(snapshot){
-       //console.log(snapshot.val())
-        btnState = snapshot.val();
-        if (btnState){
-            $("a.btn").addClass("btn-open");
-            $(".status").html("開啟")
-        }else{
-            $("a.btn").removeClass("btn-open");
-            $(".status").html("關閉");
-        }
-    });
 
-    $("a.btn").on("click",function(event){
-        event.preventDefault();
-        database.ref("iot0624/lcdControl").set(!btnState);
-    })
+//register
+
+$(document).ready(function(){
+    let registerRef = database.ref("iot0624/MCP3008/register");
+
+    registerRef.on('value',function(snapshot){
+        let registerValue = snapshot.val();
+        $("#myBar").finish().animate({"width":registerValue.toString() +"%"},200,"linear").text(registerValue.toString() +"%");
+    });  
 });

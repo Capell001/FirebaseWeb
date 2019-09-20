@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/register.css">
+  <script src="../js/jquery-3.4.1.min.js"></script>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.5.0/firebase-app.js"></script>
+<script src="/__/firebase/6.5.0/firebase-auth.js"></script>
+<script src="/__/firebase/6.5.0/firebase-database.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+  <script src="../js/register.js"></script>
+  <title>Capel</title>
+  
+</head>
+<body>
+<div id="wrap">
+  <nav class="clearfix">
+      <h1><a href="../index.html">IOT CONTROL CENTER</a></h1>
+      <ul class="list">
+        
+      </ul>
+      <img src="../images/menu.png" alt="menu" id="menu">
+  </nav>
+
+  <main>
+      <section class="itemImage">
+
+          <img src="../images/WH148.jpg"  alt="Potentiometer" class="photo">
+          <div class="card-body">
+              <h3 class="item-title">可變電阻</h3>
+              <p class="item-text">電位器最常見的用途是各式音響聲源設備裡的音量控制，或電子設備裡的各式準位與功率等的控制，也可以做為位置或角度的傳感器，或者是作為鎢絲燈泡調光器或電熱絲功率調節器的控制元件等。 源自:WIKI</p>
+
+
+          </div>
+      </section>
+      <div class="card" id="control">
+
+            <div class="card-body">
+                    <h5 class="card-title">類比訊號監視器</h5>
+                    <p class="card-text">控制Firebase 及時資料庫內的類比訊號。可以透過遠端監控水庫蓄水量</p>
+            </div>
+
+            <div id="myProgress">        
+                <div id="myBar">10</div>
+            </div>
+       </div>
+
+    <section class="demoMovie">
+        <iframe  src="https://www.youtube.com/embed/aW7J9z0nYSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section class="code">
+        <iframe height="600px" width="100%" src="https://repl.it/@roberthsu2003/c0905for2?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    </section>
+  </main>
+  <footer>
+      copyright
+  </footer>
+</div>
+
+
+</body>
+</html>
