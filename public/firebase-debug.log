@@ -1,29 +1,29 @@
-[debug] [2019-09-20T03:27:15.225Z] ----------------------------------------------------------------------
-[debug] [2019-09-20T03:27:15.228Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\student\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
-[debug] [2019-09-20T03:27:15.228Z] CLI Version:   7.3.2
-[debug] [2019-09-20T03:27:15.228Z] Platform:      win32
-[debug] [2019-09-20T03:27:15.228Z] Node Version:  v10.16.0
-[debug] [2019-09-20T03:27:15.229Z] Time:          Fri Sep 20 2019 11:27:15 GMT+0800 (GMT+08:00)
-[debug] [2019-09-20T03:27:15.229Z] ----------------------------------------------------------------------
+[debug] [2019-09-27T01:39:24.789Z] ----------------------------------------------------------------------
+[debug] [2019-09-27T01:39:24.791Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\student\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-09-27T01:39:24.792Z] CLI Version:   7.3.2
+[debug] [2019-09-27T01:39:24.792Z] Platform:      win32
+[debug] [2019-09-27T01:39:24.792Z] Node Version:  v10.16.0
+[debug] [2019-09-27T01:39:24.793Z] Time:          Fri Sep 27 2019 09:39:24 GMT+0800 (GMT+08:00)
+[debug] [2019-09-27T01:39:24.793Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-09-20T03:27:15.237Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-09-20T03:27:15.238Z] > authorizing via signed-in user
-[debug] [2019-09-20T03:27:15.238Z] [iam] checking project iotcapel for permissions ["firebase.projects.get"]
-[debug] [2019-09-20T03:27:15.239Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-09-20T03:27:15.239Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2019-09-27T01:39:24.805Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-27T01:39:24.805Z] > authorizing via signed-in user
+[debug] [2019-09-27T01:39:24.805Z] [iam] checking project iotcapel for permissions ["firebase.projects.get"]
+[debug] [2019-09-27T01:39:24.807Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-09-27T01:39:24.807Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2019-09-20T03:27:15.341Z] <<< HTTP RESPONSE 200
-[debug] [2019-09-20T03:27:15.369Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/iotcapel:testIamPermissions  
+[debug] [2019-09-27T01:39:24.924Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-27T01:39:24.958Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/iotcapel:testIamPermissions  
 
-[debug] [2019-09-20T03:27:16.294Z] <<< HTTP RESPONSE 200
-[debug] [2019-09-20T03:27:16.296Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iotcapel  
+[debug] [2019-09-27T01:39:25.893Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-27T01:39:25.895Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iotcapel  
  
-[debug] [2019-09-20T03:27:16.858Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-27T01:39:26.473Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\Capel\CapelFirebase'...
 [info] 
-[debug] [2019-09-20T03:27:16.863Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iotcapel/webApps/-/config  
+[debug] [2019-09-27T01:39:26.479Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iotcapel/webApps/-/config  
  
-[debug] [2019-09-20T03:27:17.822Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-27T01:39:27.464Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000

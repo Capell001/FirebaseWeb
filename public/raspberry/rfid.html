@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/rfid.css">
+  <script src="../js/jquery-3.4.1.min.js"></script>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/6.5.0/firebase-app.js"></script>
+<script src="/__/firebase/6.5.0/firebase-auth.js"></script>
+<script src="/__/firebase/6.5.0/firebase-database.js"></script>
+<script src="/__/firebase/6.5.0/firebase-firestore.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#reserved-urls -->
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+  <script src="../js/rfid.js"></script>
+  <title>Capel</title>
+  
+</head>
+<body>
+<div id="wrap">
+  <nav class="clearfix">
+      <h1><a href="../index.html">IOT CONTROL CENTER</a></h1>
+      <ul class="list">
+        
+      </ul>
+      <img src="../images/menu.png" alt="menu" id="menu">
+  </nav>
+
+  <main>
+      <section class="itemImage">
+
+          <img src="../images/rc522-rfid-module-1.jpg"  alt="Potentiometer" class="photo">
+          <div class="card-body">
+              <h3 class="item-title">無線射頻辨識</h3>
+              <p class="item-text">無線電的訊號是通過調成無線電頻率的電磁場，把數據從附著在物品上的標籤上傳送出去，以自動辨識與追蹤該物品。某些標籤在識別時從識別器發出的電磁場中就可以得到能量，並不需要電池；也有標籤本身擁有電源，並可以主動發出無線電波（調成無線電頻率的電磁場）。標籤包含了電子儲存的資訊，數公尺之內都可以識別。
+                  與條形碼不同的是，射頻標籤不需要處在識別器視線之內，也可以嵌入被追蹤物體之內。 源自:WIKI</p>
+
+
+          </div>
+      </section>
+      <div class="card" id="control">
+
+            <div class="card-body">
+                    <h5 class="card-title">RFID監控</h5>
+                    <p class="card-text">RFID是一種無線通訊技術，可以通過無線電訊號識別特定目標並讀寫相關數據，而無需識別系統與特定目標之間建立機械或者光學接觸。</p>
+            </div>
+            <div id='accessDisplay'>
+
+            </div>
+       </div>
+
+    <section class="demoMovie">
+        <iframe  src="https://www.youtube.com/embed/aW7J9z0nYSU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+
+    <section class="code">
+        <iframe height="600px" width="100%" src="https://repl.it/@roberthsu2003/c0905for2?lite=true" scrolling="no" frameborder="no" allowtransparency="true" allowfullscreen="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"></iframe>
+    </section>
+  </main>
+  <footer>
+      copyright
+  </footer>
+</div>
+
+
+</body>
+</html>

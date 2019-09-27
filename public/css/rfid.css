@@ -204,23 +204,25 @@ section.itemImage p{
     letter-spacing: 0.02em;
 }
 
-#control #myProgress{
-    margin-top:3em;
-    width: 100%;
-    background-color: grey;
-    border-radius: 30px;
+#control #accessDisplay .user{
+    padding: 1em;
+    border: solid 1px #ffffff;
+    background-color: #333333;
+    color: #ffffff;
 }
 
-#control #myBar {
-    width: 10%;
-    height: 30px;
-    background-color:	#ac5353;
-    text-align: right;
-    font-weight: 500;
-    line-height: 30px;
+#control #accessDisplay .user:nth-of-type(odd){
+    background-color: #aaaaaa;
+    color: #333333;
 }
 
-/*====================ControlBar End====================================*/
+#control .user h3{
+    font-size: 1em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/*====================Control End====================================*/
 
  /*=========================youtube start================================*/
  section.demoMovie{
