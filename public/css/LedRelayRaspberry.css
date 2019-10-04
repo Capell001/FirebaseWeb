@@ -61,6 +61,8 @@ html{
 	font-weight: 300;
 }
 
+/*==============================Nav Start==============================*/
+
 nav{
 	height: 60px;
 }
@@ -109,96 +111,133 @@ nav a.SignIn:hover{
 	color:#FFF;
 }
 
+
+/*==============================Nav End==============================*/
+
+
+/*==============================Main Start==============================*/
+
+ /*====================產品圖片 start====================*/
+    section.itemImage{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    section.itemImage .photo{
+        display:block;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    section.itemImage h3{
+        margin-top: 0.5em;
+        font-size:2em;
+
+    }
+
+    section.itemImage p{
+        margin-top: 3em;
+        font-size: 1.2em;
+        line-height: 1.5em;
+    }
+
+
+    /*====================產品圖片 end====================*/
 main{
 	/*background-color: bisque;*/
 	margin-bottom: 50px;
 }
-
-#innerMain {
-    width: 95%;
-    margin: 0 auto 0 auto;
+ /*====================產品圖片 start====================*/
+ section.itemImage{
+    width:50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-#innerMain h1 {
-    font-size: 3em;
-    text-align: center;
-    margin-top: 30px;
+section.itemImage .photo{
+    display:block;
+    margin-top: 0.5em;
+    width: 100%;
+    height: 100%;
 }
 
-h1+p {
-    width: 500px;
-    margin: 20px auto 0 auto;
-    text-align: center;
-    line-height: 25px;
-    font-weight: 200;
+section.itemImage h3{
+    margin-top: 0.5em;
+    font-size:2em;
+}
+
+section.itemImage p{
+    margin-top: 3em;
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+
+/*====================產品圖片 end====================*/
+/*====================Card Start====================================*/
+#ledControl .card-body{
+    background-color: #e6e6e6;
+    border: 1px #ccc solid;
+    padding:1em 2em;
+    margin: 5em auto;
+    width: 50%;
+}
+#ledControl .card-title{
+    font-weight: 700;
+    font-size: 1.5em;
+    color: rgb(204, 61, 61);
+    margin-bottom: 0.3em;
+}
+
+#lenControl .card-text{
+    line-height: 1.2em;
     letter-spacing: 0.02em;
 }
 
-#sectionContainer {
-
-    display: flex;
-
-    justify-content: space-between;
-	margin-top: 30px;
-}
-
-#sectionContainer section {
-    flex-grow: 1;
-	border: solid 1px #bbb;
-}
-
-#sectionContainer section:first-child{
-	margin-right:20px;
-}
-
-#sectionContainer section:last-child{
-	margin-left:20px;
-}
-
-section h2 {
-    height: 30px;
-    text-align: center;
-    font-size: 1.2em;
-    padding: 5px;
-    background: #ddd;
-    line-height: 30px;
-    border-bottom: solid 1px #bbb;
-}
-
-section li {
-    margin: 20px;
-    text-align: center;
-    letter-spacing: 0.03em;
-	font-size: 1.2em;
-    font-weight: 400;
-    border: 1px solid #999;
-    padding: 20px;
-
-}
-
-section li a{
+#ledControl .btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    border-radius: 0.3em;
+    color: rgb(255, 254, 254);
     text-decoration: none;
-    color:#999999;
+    font-weight: 400;
+    margin-top: 3em;
+    border: 1px solid #555;
+    background-color: rgb(52, 57, 134);
 }
 
 
-
-section p{
-	text-align: center;
-	margin: 20px 20px;
-	font-size: 1.2em;
-    padding: 20px;
-	border: 1px solid #555;
-	border-radius: 7px;
+#ledControl .btn-open {
+    background-color: #fa3232;
 }
 
 
-section p:hover{
-	background:#F17c67;
-	color:#FFF;
+/*====================Card End====================================*/
+
+ /*=========================youtube start================================*/
+ section.demoMovie{
+    width:50%;
+    margin:0 auto;
 }
+section.demoMovie iframe{
+    width:100%;
+    height: 380px;
+    display:block;
+    margin:0 auto;
+}
+/*=========================youtube start================================*/
 
+ /*======================== code start =================================*/
+ section.code{
 
+    width:80%;
+    margin:5em auto;
+}
+/*======================== code end =================================*/
+
+/*==============================Main End==============================*/
 footer{
 	background-color: darkgoldenrod;
 	height: 25px;
@@ -241,25 +280,15 @@ footer{
 
 }
 
+@media (min-width: 1300px){
+    #wrap {
+        width: 1200px;
+        margin:auto auto;
+    }
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
-    #innerMain {
-        width: 95%;
-        margin: 20px auto;
-
-    }
    
-
-    #sectionContainer section:first-child {
-        width:50%;
-        margin:0 0 20px 0;
-    }
-
-
-    #sectionContainer section:last-child{
-        width:50%;
-        margin-right: 10px;
-        margin-bottom: 20px;
-    }
 
     footer {
         background: #93435e;
@@ -306,26 +335,19 @@ footer{
     }
     
 
-    #innerMain {
-        width: 100%;
-        padding: 20px;
+     /*===================Main Start=====================================*/
+     #ledControl .card-body {
+        width: 80%;
     }
 
-    #sectionContainer {
-       flex-wrap: wrap;
+    /*===================Main End=====================================*/
+    /*====================產品圖片 start====================*/
+    section.itemImage{
+        width:80%;
+        margin-left: auto;
+        margin-right: auto;
     }
-    #sectionContainer section:first-child {
-        width:100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-   
-    #sectionContainer section:last-child{
-        width:100%;
-		margin-right: 0;
-		margin-left: 0;
-        margin-bottom: 20px;
-    }
+    /*====================產品圖片 start====================*/
 
     footer {
         background: #938245;

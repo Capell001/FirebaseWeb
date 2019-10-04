@@ -8,6 +8,27 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="ProjectId" id="1ROxqvn2raZHVLwBNXqG562atrC" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -22,6 +43,12 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\untitled\project\rfid" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,7 +73,17 @@
       <option name="presentableId" value="Default" />
       <updated>1569552137429</updated>
       <workItem from="1569552138916" duration="2000000" />
-      <workItem from="1569572410733" duration="1436000" />
+      <workItem from="1569572410733" duration="1972000" />
+      <workItem from="1569892015296" duration="8744000" />
+      <workItem from="1569979364265" duration="3103000" />
+      <workItem from="1569984097415" duration="125000" />
+      <workItem from="1569984643065" duration="3483000" />
+      <workItem from="1569988490569" duration="3492000" />
+      <workItem from="1569994099859" duration="8373000" />
+      <workItem from="1570006923457" duration="142000" />
+      <workItem from="1570072021858" duration="224000" />
+      <workItem from="1570072765135" duration="7230000" />
+      <workItem from="1570154662095" duration="387000" />
     </task>
     <servers />
   </component>

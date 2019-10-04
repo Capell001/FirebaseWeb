@@ -238,7 +238,12 @@ footer{
     padding: 30px;
     box-shadow: 3px 3px 3px #333;
 
-
+}
+#msg{
+    text-align: center;
+}
+#space{
+    height: 50px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

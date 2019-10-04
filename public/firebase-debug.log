@@ -1,29 +1,49 @@
-[debug] [2019-09-27T01:39:24.789Z] ----------------------------------------------------------------------
-[debug] [2019-09-27T01:39:24.791Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\student\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
-[debug] [2019-09-27T01:39:24.792Z] CLI Version:   7.3.2
-[debug] [2019-09-27T01:39:24.792Z] Platform:      win32
-[debug] [2019-09-27T01:39:24.792Z] Node Version:  v10.16.0
-[debug] [2019-09-27T01:39:24.793Z] Time:          Fri Sep 27 2019 09:39:24 GMT+0800 (GMT+08:00)
-[debug] [2019-09-27T01:39:24.793Z] ----------------------------------------------------------------------
+[debug] [2019-10-04T03:33:23.475Z] ----------------------------------------------------------------------
+[debug] [2019-10-04T03:33:23.478Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\student\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-10-04T03:33:23.478Z] CLI Version:   7.3.2
+[debug] [2019-10-04T03:33:23.478Z] Platform:      win32
+[debug] [2019-10-04T03:33:23.478Z] Node Version:  v10.16.0
+[debug] [2019-10-04T03:33:23.479Z] Time:          Fri Oct 04 2019 11:33:23 GMT+0800 (GMT+08:00)
+[debug] [2019-10-04T03:33:23.479Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2019-09-27T01:39:24.805Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2019-09-27T01:39:24.805Z] > authorizing via signed-in user
-[debug] [2019-09-27T01:39:24.805Z] [iam] checking project iotcapel for permissions ["firebase.projects.get"]
-[debug] [2019-09-27T01:39:24.807Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2019-09-27T01:39:24.807Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2019-10-04T03:33:23.491Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-04T03:33:23.491Z] > authorizing via signed-in user
+[debug] [2019-10-04T03:33:23.491Z] [iam] checking project iotcapel for permissions ["firebase.projects.get"]
+[debug] [2019-10-04T03:33:23.493Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-10-04T03:33:23.493Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2019-09-27T01:39:24.924Z] <<< HTTP RESPONSE 200
-[debug] [2019-09-27T01:39:24.958Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/iotcapel:testIamPermissions  
+[debug] [2019-10-04T03:33:23.604Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-04T03:33:23.627Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/iotcapel:testIamPermissions  
 
-[debug] [2019-09-27T01:39:25.893Z] <<< HTTP RESPONSE 200
-[debug] [2019-09-27T01:39:25.895Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iotcapel  
+[debug] [2019-10-04T03:33:24.570Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-04T03:33:24.572Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iotcapel  
  
-[debug] [2019-09-27T01:39:26.473Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-04T03:33:35.675Z] Error: getaddrinfo ENOTFOUND firebase.googleapis.com firebase.googleapis.com:443
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:56:26)
+[error] 
+[error] Error: Server Error. getaddrinfo ENOTFOUND firebase.googleapis.com firebase.googleapis.com:443
+[debug] [2019-10-04T03:34:38.696Z] ----------------------------------------------------------------------
+[debug] [2019-10-04T03:34:38.698Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\student\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2019-10-04T03:34:38.698Z] CLI Version:   7.4.0
+[debug] [2019-10-04T03:34:38.698Z] Platform:      win32
+[debug] [2019-10-04T03:34:38.698Z] Node Version:  v10.16.0
+[debug] [2019-10-04T03:34:38.699Z] Time:          Fri Oct 04 2019 11:34:38 GMT+0800 (GMT+08:00)
+[debug] [2019-10-04T03:34:38.699Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-10-04T03:34:38.707Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-10-04T03:34:38.708Z] > authorizing via signed-in user
+[debug] [2019-10-04T03:34:38.708Z] [iam] checking project iotcapel for permissions ["firebase.projects.get"]
+[debug] [2019-10-04T03:34:38.710Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/iotcapel:testIamPermissions  
+
+[debug] [2019-10-04T03:34:39.676Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-04T03:34:39.679Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iotcapel  
+ 
+[debug] [2019-10-04T03:34:40.323Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from 'C:\Capel\CapelFirebase'...
 [info] 
-[debug] [2019-09-27T01:39:26.479Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iotcapel/webApps/-/config  
+[debug] [2019-10-04T03:34:40.329Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/iotcapel/webApps/-/config  
  
-[debug] [2019-09-27T01:39:27.464Z] <<< HTTP RESPONSE 200
+[debug] [2019-10-04T03:34:41.220Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] +  hosting: Local server: http://localhost:5000

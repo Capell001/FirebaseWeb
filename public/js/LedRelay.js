@@ -48,6 +48,19 @@ $(function(){
     
 });
 
+//Authentication Of Firebase
+firebase.auth().signInWithEmailAndPassword("bbb@gmail.com", "111111")
+    .then(function(result){
+        console.log("login 成功");
+    })
+    .catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  console.log(errorCode,errorMessage)
+  // ...
+});
+
 // Initialize Firebase
 var database = firebase.database();
 var btnState;

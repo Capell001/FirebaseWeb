@@ -17,14 +17,11 @@ $(function() {
 //sign in
 $(function(){
     var $alertMessage = $(".alertMessage");
-    $alertMessage.hide();
+    
 
-    $('.SignIn').on('click',function(event){
-        $alertMessage.slideDown(300);
-        event.preventDefault();
-        $('.cancel').on("click",function(event){
-            $alertMessage.slideUp(300);
-        });  
+    $('.bg').on('click',function(event){
+        $alertMessage.slideUp(300);
+        event.preventDefault(); 
     });
 });
 
